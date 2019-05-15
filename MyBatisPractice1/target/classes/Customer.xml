@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="myTest">
+    <!--根据cust_id查询客户-->
+    <select id="queryCustomerById" parameterType="Int" resultType="cn.lulutan.domain.Customer">
+		  SELECT * FROM `customer` WHERE cust_id  = #{cust_id}
+		</select>
+
+    <select id="queryAll" resultType="cn.lulutan.domain.Customer">
+        select * from customer;
+    </select>
+
+      <!-- select * from customer where cust_name like '%${value}%'  -->
+    <!-- 模糊查询-->
+    <select id="queryCustomerByName" parameterType="String" resultType="cn.lulutan.domain.Customer">
+
+
+        select * from customer where cust_name like #{cust_name}
+    </select>
+
+    <!-- 添加客户-->
+    <insert id="insertCustomer" parameterType="cn.lulutan.domain.Customer" useGeneratedKeys="true" keyColumn="cust_id" keyProperty="cust_id"  >
+        insert into `customer` (cust_name,cust_profession,cust_phone,email)
+        values (#{cust_name},#{cust_profession},#{cust_phone},#{email})
+    </insert>
+
+    <!-- 更新操作-->
+    <update id="updateCustomer" parameterType="cn.lulutan.domain.Customer">
+        update `customer` set cust_name=#{cust_name} where cust_id = #{cust_id}
+    </update>
+
+    <!-- 删除-->
+    <delete id="deleteCustomer" parameterType="cn.lulutan.domain.Customer">
+
+        delete from `customer` where cust_id = #{cust_id}
+    </delete>
+</mapper>
