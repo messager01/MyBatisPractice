@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 定义属性 及 读取属性文件 -->
+    <properties resource="db.properties">
+    </properties>
+
+    <!-- 配置SQL的打印-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>    <!--  开启驼峰命名-->
+    </settings>
+
+    <!--  定义别名-->
+    <typeAliases>
+        <typeAlias type="cn.lulutan.club.domain.Customer" alias="Customer"/>   <!--  单个别名的定义  -->
+        <package name="cn.lulutan.club.domain"/>  <!-- 批量定义别名  别名即为类名  -->
+    </typeAliases>
+
+    <!-- spring整合后 environments配置将废除 使用spring中的连接池 -->
+    <environments default="development">
+        <environment id="development">
+            <!-- 使用jdbc事务管理 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据库连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+                <property name="url"     value="${jdbc.url}" />
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+
+
+        <environment id="test">
+            <!-- 使用jdbc事务管理 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据库连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}" />
+                <property name="url"     value="${jdbc.url}" />
+                <property name="username" value="${jdbc.username}" />
+                <property name="password" value="${jdbc.password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--  定义数据库厂商标识 -->
+
+    <databaseIdProvider type="DB_VENDOR">
+        <property name="MYSQL" value="mysql"/>
+        <property name="DB2" value="db2"/>
+        <property name="Oracle" value="oracle" />
+        <property name="SQL Server" value="sqlserver"/>
+    </databaseIdProvider>
+
+    <!--加载映射文件-->
+    <mappers>
+        <!--  第一种方式  直接写映射mapper的地址 -->
+        <mapper resource="cn/lulutan/club/mapper/CustomerMapper.xml"></mapper>
+
+        <!--  第二种方式
+        1.  xml名称必须和接口名称一致
+        2.  xml 必须和接口 在同一目录下
+        -->
+        <!--<mapper class="cn.lulutan.club.mapper.CustomerMapper"/>-->
+
+        <!-- 第三种  要求同上-->
+      <!--  <package name="cn.lulutan.club.mapper"/>-->
+       <!-- <package name="cn.lulutan.club.mapper"/>-->
+    </mappers>
+</configuration>
+

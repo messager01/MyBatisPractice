@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="512cc159-4730-496e-9887-f17952ce1af8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice1/src/main/java/cn/lulutan/dao/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice1/src/main/java/cn/lulutan/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatisPractice2Parameter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lulutan/club/utils/MyBatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/SqlMappingConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cn/lulutan/club/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3-ResultType/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3-ResultType/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3-ResultType/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3-ResultType/MyBatisPractice3-ResultType.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice3/.idea/libraries/ant_1_9_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatisPractice1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisPractice1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatisPractice1/src/main/resources/Customer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisPractice1/src/main/resources/Customer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatisPractice1/src/test/java/cn/lulutan/Tset1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisPractice1/src/test/java/cn/lulutan/Tset1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatisPractice1/target/classes/Customer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisPractice1/target/classes/Customer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyBatisPractice1/target/test-classes/cn/lulutan/Tset1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MyBatisPractice1/target/test-classes/cn/lulutan/Tset1.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-22422347">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="448" />
+          <entry key="properties" value="63" />
+          <entry key="xml" value="645" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="448" />
+          <entry key="Properties" value="63" />
+          <entry key="SQL" value="4" />
+          <entry key="XML" value="641" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="iml" value="1" />
+          <entry key="java" value="10" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="10" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/domain/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" selection-start-line="5" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMappingConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2100">
+              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1288">
+              <caret line="46" column="17" selection-start-line="28" selection-start-column="2" selection-end-line="46" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Mybatis Mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/utils/MyBatisUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/cn/lulutan/club/MyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/domain/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Customer.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/SqlMappingConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/maven/apache-maven-3.5.4" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBatisPractice2Parameter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBatisPractice2Parameter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557911399016" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\撩课\MyBatisPractice\MyBatisPractice2Parameter\src\main\java\cn\lulutan\club\mapper" />
+      <recent name="F:\撩课\MyBatisPractice\MyBatisPractice2Parameter\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.lulutan.club.utils" />
+      <recent name="cn.lulutan.club.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\撩课\MyBatisPractice\MyBatisPractice2Parameter\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBatisPractice2Parameter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lulutan.club.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lulutan.club" />
+      <option name="MAIN_CLASS_NAME" value="cn.lulutan.club.MyTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="512cc159-4730-496e-9887-f17952ce1af8" name="Default Changelist" comment="" />
+      <created>1557907353811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557907353811</updated>
+      <workItem from="1557907356527" duration="4040000" />
+      <workItem from="1557911561468" duration="808000" />
+      <workItem from="1557912680829" duration="503000" />
+      <workItem from="1557922366887" duration="213000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 40m 39s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 52m 26s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 52m 46s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 54m 53s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 56m 49s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 16h 58m 28s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 17h 00m 57s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 17h 01m 17s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 17h 01m 44s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test1 - 2019.05.15 at 17h 05m 21s.xml">
+      <configuration name="MyTest.test1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5564000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-5" y="-5" width="1552" height="840" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2416332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6284875" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.31864905" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="12" />
+      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/utils/MyBatisUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBatisPractice2Parameter.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/lulutan/club/AppTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/cn/lulutan/club/MyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/CustomerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/domain/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMappingConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="46" column="17" selection-start-line="28" selection-start-column="2" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/lulutan/club/mapper/MyTest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

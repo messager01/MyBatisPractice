@@ -1,6 +1,7 @@
 package cn.lulutan;
 
 import cn.lulutan.domain.Customer;
+import cn.lulutan.mapper.CustomerMapper;
 import cn.lulutan.utils.MyBatisUtils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -86,5 +87,23 @@ public class Tset1 {
         sqlSession.delete("deleteCustomer",customer);
         sqlSession.commit();
         sqlSession.close();
+    }
+
+    @Test
+    public void test6(){
+        SqlSession sqlSession = MyBatisUtils.openSession();
+        CustomerMapper mapper = sqlSession.getMapper(CustomerMapper.class);  //  动态创建实现类
+        Customer customer = mapper.queryCustomerById(10);
+        System.out.println(customer
+        );
+
+
+        List<Customer> customers = mapper.queryAll();
+        for (Customer customer1 : customers) {
+            System.out.println(customer1);
+        }
+        sqlSession.close();
+
+
     }
 }
