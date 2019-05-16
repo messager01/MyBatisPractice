@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.lulutan.mapper.CustomerMapper">
+
+<!--  添加二级缓存-->
+    <!-- 添加cache 标签
+  -->
+    <!--
+
+    LRU 最近最少使用  刷新时间1000ms    只读                sieze 可以存放多少元素  type  使用第三方缓存
+    -->
+    <cache eviction="LRU" flushInterval="1000" readOnly="true" size="100">
+
+    </cache>
+                                              <!-- 在select中设置是否使用缓存 useCache="true"-->
+    <select id="getCustomerWithId" resultType="club.lulutan.domain.Customer" useCache="false">
+        select * from `customer` where `cust_id`=#{id}
+    </select>
+
+
+    <insert id="insertCustomer">
+        insert into `customer` (cust_name) values (#{cust_name})
+    </insert>
+</mapper>
