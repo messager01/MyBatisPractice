@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="club.lulutan.mapper.CustomerMapper">
+
+
+    <!--where 标签可以自动生成和删除 where  还能删除where后第一个and  且只能删除前面的and-->
+    <select id="getCustomer1" resultType="club.lulutan.domain.Customer">
+        select * from `customer`
+        <where>
+            <if test="name != null and name != ''">
+                `cust_name` = #{name}
+            </if>
+            <if test="profession != null and profession != ''">
+                and  `cust_profession` = #{profession}
+            </if>
+        </where>
+
+    </select>
+
+
+
+    <!--
+    choose  只执行第一个满足条件的  后面的都不执行
+    when
+    otherwise
+    -->
+    <select id="getCustomer" resultType="club.lulutan.domain.Customer">
+        select * from `customer`
+        <where>
+          <choose>
+              <when test="name != null and name != ''">
+                  `cust_name` = #{name}
+              </when>
+
+              <when test="profession!= null and profession!= ''">
+                    `cust_profession`=#{profession}
+              </when>
+
+              <otherwise>1=1</otherwise>
+            </choose>
+
+        </where>
+
+    </select>
+
+
+
+    <!--  set 标签 会把最后一个逗号去掉  -->
+    <update id="updateCustomer">
+
+        update `customer`
+        <set>
+            <if test="cust_name != null and cust_name!= ''">
+                `cust_name` = #{cust_name},
+            </if>
+            <if test="cust_profession != null and cust_profession!= ''">
+                `cust_profession` = #{cust_profession},
+            </if>
+        </set>
+        where cust_id = #{cust_id}
+    </update>
+
+
+
+
+    <!--  foreach 标签  逐个取出数组中的每个值  -->
+   <!-- <select id="getCustomers1" parameterType="Integer[]" resultType="club.lulutan.domain.Customer">
+        select * from `customer` where `cust_id` in
+        <foreach collection="array" open="(" close=")" separator="," item="ids">
+            #{ids}
+        </foreach>
+    </select>-->
+
+    <select id="getCustomers" parameterType="List" resultType="club.lulutan.domain.Customer">
+        select * from `customer` where `cust_id` in
+        <foreach collection="list" open="(" close=")" separator="," item="ids">
+            #{ids}
+        </foreach>
+    </select>
+
+
+
+    <!--
+    bind标签： 可以取出传入的值   重新处理后  赋值给另外一个值
+    -->
+
+    <!-- 可以给传进来的id  进行操作 然后重新复制  -->
+    <select id="getCustomerWithId" resultType="club.lulutan.domain.Customer">
+        <bind name="newId" value="id+1"></bind>
+        select * from `customer` where `cust_id`= #{newId}
+    </select>
+</mapper>

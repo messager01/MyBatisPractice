@@ -2,30 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="120c8972-490c-425a-8eee-4f35c0b75dcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/domain/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/domain/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/club/lulutan/test/ManyToMany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/libraries/ant_1_9_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/MyBatisPractice4-DynamicSQL.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/ant-1.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/ant-launcher-1.9.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/asm-5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/cglib-3.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/javassist-3.22.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/junit-4.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/log4j-api-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/log4j-core-2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/ognl-3.1.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/SqlMappingConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/club/lulutan/domain/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/club/lulutan/mapper/CustomerMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/club/lulutan/mapper/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/club/lulutan/test/MyTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/club/lulutan/utils/MyBatisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/out/production/MyBatisPractice4-DynamicSQL/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/resources/SqlMappingConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/src/club/lulutan/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/src/club/lulutan/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/src/club/lulutan/mapper/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/src/club/lulutan/test/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyBatisPractice4-DynamicSQL/src/club/lulutan/utils/MyBatisUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/domain/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/CustomerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/CustomerMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/OrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/OrderMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/test/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/club/lulutan/test/MyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyBatisPractice3-ResultType/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/CustomerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/mapper/CustomerMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/CustomerMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/club/lulutan/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/club/lulutan/test/MyTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,10 +52,11 @@
     <session id="482396251">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
+            <state relative-caret-position="644">
               <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,7 +109,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="785">
+            <state relative-caret-position="576">
               <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
             </state>
           </provider>
@@ -103,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/StudentMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="392">
               <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
             </state>
           </provider>
@@ -124,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/club/lulutan/test/ManyToMany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
+            <state relative-caret-position="1064">
               <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -205,6 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,43 +252,17 @@
               <item name="club" type="462c0819:PsiDirectoryNode" />
               <item name="lulutan" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MyBatisPractice3-ResultType" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisPractice3-ResultType" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="club" type="462c0819:PsiDirectoryNode" />
-              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisPractice3-ResultType" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisPractice3-ResultType" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="club" type="462c0819:PsiDirectoryNode" />
-              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyBatisPractice3-ResultType" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyBatisPractice3-ResultType" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="club" type="462c0819:PsiDirectoryNode" />
-              <item name="lulutan" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557992658311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557994151310" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -411,7 +402,9 @@
       <option name="presentableId" value="Default" />
       <updated>1557922569087</updated>
       <workItem from="1557922572261" duration="4187000" />
-      <workItem from="1557982564210" duration="10691000" />
+      <workItem from="1557982564210" duration="10986000" />
+      <workItem from="1557994390923" duration="5000" />
+      <workItem from="1557994414204" duration="601000" />
     </task>
     <servers />
   </component>
@@ -448,13 +441,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14878000" />
+    <option name="totallyTimeSpent" value="15779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18096514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18632708" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -563,9 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -573,9 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,25 +569,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#test1#0;class#MyTest#0" />
-            <element signature="method#test2#0;class#MyTest#0" />
-            <element signature="method#test3#0;class#MyTest#0" />
-            <element signature="method#test4#0;class#MyTest#0" />
-            <element signature="method#test5#0;class#MyTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/club/lulutan/test/ManyToMany.java">
+    <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/StudentMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#test2#0;class#ManyToMany#0" />
-          </folding>
+        <state relative-caret-position="392">
+          <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -615,26 +599,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/club/lulutan/test/ManyToMany.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state relative-caret-position="1064">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#test2#0;class#ManyToMany#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/club/lulutan/mapper/TeacherMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
+        <state relative-caret-position="576">
           <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
         </state>
       </provider>
