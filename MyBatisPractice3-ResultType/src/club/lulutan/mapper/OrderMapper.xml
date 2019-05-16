@@ -32,6 +32,11 @@
            <result column="email" property="email"/>
        </association>
     </resultMap>
+    <update id="updateCust_id">
+        update `order` set cust_id = #{custId} where order_id = #{orderId}
+    </update>
+
+
     <select id="getAllOrders" resultMap="orderMap">
       SELECT * from `order` as o LEFT JOIN customer as c
       on c.cust_id = o.cust_id
@@ -52,4 +57,21 @@
     <select id="getOrder" resultMap="resultMap2">
         select * from `order` where order_id = #{id};
     </select>
+
+
+    <!--  添加订单   -->
+    <insert id="insertOrder" useGeneratedKeys="true" keyColumn="order_id" keyProperty="order_id">
+        insert into `order` (order_name,order_num,cust_id)
+        values (#{order_name},#{order_num},#{customer.cust_id})
+    </insert>
+
+    <select id="getOrderWithId" resultType="club.lulutan.domain.Order">
+        select * from `order` where cust_id = #{id}
+    </select>
+
+
+    <!--  打破关系-->
+    <update id="updateRelation">
+        update `order` set cust_id = null where cust_id = #{cust_id}
+    </update>
 </mapper>

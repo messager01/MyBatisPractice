@@ -32,6 +32,11 @@
            <result column="email" property="email"/>
        </association>
     </resultMap>
+    <update id="updateCust_id">
+        update `order` set cust_id = #{custId} where order_id = #{orderId}
+    </update>
+
+
     <select id="getAllOrders" resultMap="orderMap">
       SELECT * from `order` as o LEFT JOIN customer as c
       on c.cust_id = o.cust_id
@@ -39,17 +44,34 @@
 
 
 
+    <!--  使用assocation  关联查询   支持分步查询  可以懒加载-->
     <resultMap id="resultMap2" type="Order">
         <id property="order_id" column="order_id"></id>
         <result property="order_name" column="order_name"></result>
         <result property="order_num" column="order_num"></result>
         <association property="customer" javaType="Customer"
         select="club.lulutan.mapper.CustomerMapper.getCustomerWithId" column="cust_id">  <!-- 把上面查出的cust_id 传过去-->
-
         </association>
     </resultMap>
 
     <select id="getOrder" resultMap="resultMap2">
         select * from `order` where order_id = #{id};
     </select>
+
+
+    <!--  添加订单   -->
+    <insert id="insertOrder" useGeneratedKeys="true" keyColumn="order_id" keyProperty="order_id">
+        insert into `order` (order_name,order_num,cust_id)
+        values (#{order_name},#{order_num},#{customer.cust_id})
+    </insert>
+
+    <select id="getOrderWithId" resultType="club.lulutan.domain.Order">
+        select * from `order` where cust_id = #{id}
+    </select>
+
+
+    <!--  打破关系-->
+    <update id="updateRelation">
+        update `order` set cust_id = null where cust_id = #{cust_id}
+    </update>
 </mapper>

@@ -9,4 +9,62 @@
     <select id="getCustomerWithId" resultType="club.lulutan.domain.Customer">
           select * from `customer` where cust_id = #{id};
     </select>
+
+
+
+    <insert id="insertCustomer" useGeneratedKeys="true" keyProperty="cust_id" keyColumn="cust_id">
+        insert into `customer` (cust_name,cust_profession,cust_phone,email)
+        values (#{cust_name},#{cust_profession},#{cust_phone},#{email})
+    </insert>
+
+
+    <!--  查询所有客户-->
+   <!-- <select id="getAllCustomers" resultMap="customerMap">
+        select * from `customer` as c left join `order` as o
+        on c.cust_id = o.cust_id
+    </select>
+
+    <resultMap id="customerMap" type="Customer">
+        <id column="cust_id" property="cust_id"></id>
+        <result column="cust_name" property="cust_name"></result>
+        <result column="cust_profession" property="cust_profession"/>
+        <result column="cust_phone" property="cust_phone"/>
+        <result column="email" property="email"/>
+        &lt;!&ndash;  关联一个集合 用 collection  property  表示关联的集合名    oftype  表示集合中存放的数据类型 &ndash;&gt;
+        <collection property="orders" ofType="Order">
+            <id property="order_id" column="order_id"/>
+            <result property="order_name" column="order_name"/>
+            <result property="order_num" column="order_num"/>
+        </collection>
+    </resultMap>-->
+
+
+    <!--    分步查询 所有客户  -->
+    <select id="getAllCustomers" resultMap="customerMap">
+        select * from `customer`;
+    </select>
+
+    <resultMap id="customerMap" type="Customer">
+        <id column="cust_id" property="cust_id"></id>
+        <result column="cust_name" property="cust_name"></result>
+        <result column="cust_profession" property="cust_profession"/>
+        <result column="cust_phone" property="cust_phone"/>
+        <result column="email" property="email"/>
+
+        <!--  javaType="list"  表示查出来的是一个list集合 -->
+        <collection property="orders"
+                    javaType="list"
+                    ofType="Order"
+                    select="club.lulutan.mapper.OrderMapper.getOrderWithId" column="cust_id">
+
+        </collection>
+    </resultMap>
+
+
+
+    <delete id="deleteCustomerById">
+
+        delete from `customer` where cust_id = #{id}
+
+    </delete>
 </mapper>

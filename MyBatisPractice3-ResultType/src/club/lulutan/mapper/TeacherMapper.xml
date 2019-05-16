@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="club.lulutan.mapper.TeacherMapper">
+
+
+    <resultMap id="allTeachers" type="Teacher">
+        <id column="teacher_id" property="teacher_id"/>
+        <result column="teacher_name" property="teacher_name"/>
+        <!-- property="students" 集合名称    javaType="list"类型是list集合  ofType="StudentMapper" list中存的是student   -->
+        <collection property="students" javaType="list" ofType="Student">
+            <id property="stu_id" column="stu_id"/>
+            <result column="stu_name" property="stu_name"/>
+        </collection>
+    </resultMap>
+
+
+    <select id="getAllTeachers" resultMap="allTeachers">
+        SELECT t.*,s.* from teacher as t LEFT JOIN stu_teacher_rel as r
+        on t.teacher_id = r.teacher_id LEFT JOIN student as s
+        on r.stu_id = s.stu_id
+    </select>
+
+
+    <resultMap id="techerById" type="Teacher">
+        <id column="teacher_id" property="teacher_id"/>
+        <result column="teacher_name" property="teacher_name"/>
+        <collection property="students" javaType="list" ofType="Student"
+                    select="club.lulutan.mapper.StudentMapper.getStudentByTeacherId" column="teacher_id">
+            <id property="stu_id" column="stu_id"/>
+            <result column="stu_name" property="stu_name"/>
+        </collection>
+    </resultMap>
+
+    <select id="getTeacherByIDd" resultMap="techerById">
+        select * from `teacher` where teacher_id = #{id}
+    </select>
+
+
+
+    <insert id="insertTeacher" useGeneratedKeys="true" keyProperty="teacher_id" keyColumn="teacher_id">
+        insert into `teacher` (teacher_name) values (#{teacher_name})
+    </insert>
+
+
+<!--  维护关系表  -->
+    <insert id="updateRel">
+      insert into `stu_teacher_rel` values (#{studentId},#{teacherId})
+    </insert>
+</mapper>

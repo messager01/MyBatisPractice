@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="club.lulutan.mapper.StudentMapper">
+
+
+
+    <select id="getStudentByTeacherId" resultType="club.lulutan.domain.Student">
+
+        select * from student
+        where
+        stu_id in
+    (SELECT r.stu_id from teacher as t,stu_teacher_rel as r where t.teacher_id = r.teacher_id and t.teacher_id = #{teacher_id})
+    </select>
+
+    <insert id="insertStudent" useGeneratedKeys="true" keyColumn="stu_id" keyProperty="stu_id">
+        insert into `student` (stu_name) values (#{stu_name})
+    </insert>
+
+</mapper>
